@@ -1,0 +1,107 @@
+
+.header {
+  margin-top: 24px;
+}
+
+.container {
+  max-width: 1420px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.group {
+  width: 525px;
+  height: 16px;
+}
+
+.group p {
+  font-family: SF UI Text;
+  font-size: 16px;
+  font-weight: 400;
+  color: #828282;
+  word-spacing: 4px;
+}
+
+.active {
+  color: black;
+}
+
+.title {
+  width: 538px;
+  height: 48px;
+  margin-top: 32px;
+  span {
+    font-family: SF UI Text;
+    font-size: 32px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 48px;
+  }}
+
+
+.select-group {
+  margin-bottom: 40px;
+  width: 600px;
+  margin-top: 28px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-select, .right-select {
+  width: 288px;
+  display: flex;
+  flex-direction: column;
+
+  span {
+    font-family: SF Pro Display;
+    margin-left: 20px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #4F4F4F
+  ;
+    line-height: 18px;
+  }
+
+  select {
+    font-family: SF Pro Display;
+    margin-top: -15px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #4F4F4F;
+    line-height: 18px;
+    background-color: #F2F2F2;
+    border: white solid 1px;
+  }
+}
+
+input {
+  height: 40px;
+  border: white;
+  background: #F2F2F2;
+}
+
+.components__wrapper {
+  width: 100%;
+  margin-bottom: 40px;
+  display: grid;
+  //!* Две колонки *!
+  grid-template-columns: auto auto auto auto;
+  //!* Два ряда *!
+  grid-template-rows: auto auto;
+  grid-auto-flow: row;
+  gap: 20px;
+  justify-content: left;
+
+  @media (max-width: 1400px){
+    grid-template-columns: auto auto auto;
+  }
+  @media (max-width: 1040px) {
+    grid-template-columns: auto auto;
+  }
+  @media (max-width: 720px) {
+    grid-template-columns: auto;
+  }
+}
+
