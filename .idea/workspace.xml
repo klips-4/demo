@@ -115,8 +115,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.deploy" />
         <item itemvalue="npm.predeploy" />
       </list>
@@ -139,7 +139,7 @@
       <workItem from="1702840873710" duration="34000" />
       <workItem from="1702841104510" duration="6712000" />
       <workItem from="1702848703529" duration="261000" />
-      <workItem from="1702868664468" duration="3411000" />
+      <workItem from="1702868664468" duration="5269000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1702826786900</created>
@@ -183,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702871106942</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add base">
+      <created>1702872172131</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1702872172131</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

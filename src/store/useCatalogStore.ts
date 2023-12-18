@@ -10,14 +10,15 @@ export const useCatalogStore = defineStore('products', {
     }),
 
     actions: {
-        fetchCatalogData() {
-            return catalog.fetchCatalogData().then(({data}) => {
-                this.products = data
 
+        fetchCatalogData() {
+            fetch("../src/database/items.json").then((response) => response.json()).then((data)=>{
+                this.products = data
             })
         },
+
         fetchMaterialData() {
-           return catalog.fetchMaterialData().then(({data}) => {
+            fetch("../src/database/materials.json").then((response) => response.json()).then((data)=>{
                 this.materials = data
             })
         },
