@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e144a22e-2b32-42cb-b57e-fc3fb9f5472e" name="Changes" comment="add dist">
+    <list default="true" id="e144a22e-2b32-42cb-b57e-fc3fb9f5472e" name="Changes" comment="add base">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/useCatalogStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/useCatalogStore.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -137,7 +139,7 @@
       <workItem from="1702840873710" duration="34000" />
       <workItem from="1702841104510" duration="6712000" />
       <workItem from="1702848703529" duration="261000" />
-      <workItem from="1702868664468" duration="2400000" />
+      <workItem from="1702868664468" duration="3411000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1702826786900</created>
@@ -174,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702870906353</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add base">
+      <created>1702871106942</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702871106942</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +222,7 @@
     <MESSAGE value="initial" />
     <MESSAGE value="first commit" />
     <MESSAGE value="add dist" />
-    <option name="LAST_COMMIT_MESSAGE" value="add dist" />
+    <MESSAGE value="add base" />
+    <option name="LAST_COMMIT_MESSAGE" value="add base" />
   </component>
 </project>

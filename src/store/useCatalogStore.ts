@@ -11,13 +11,13 @@ export const useCatalogStore = defineStore('products', {
 
     actions: {
         fetchCatalogData() {
-            catalog.fetchCatalogData().then(({data}) => {
+            return catalog.fetchCatalogData().then(({data}) => {
                 this.products = data
 
             })
         },
         fetchMaterialData() {
-            catalog.fetchMaterialData().then(({data}) => {
+           return catalog.fetchMaterialData().then(({data}) => {
                 this.materials = data
             })
         },
