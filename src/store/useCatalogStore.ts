@@ -1,6 +1,6 @@
 import {defineStore} from "pinia";
 import {Catalog} from "../types/Props";
-import {catalog} from "../service/api"
+
 
 
 export const useCatalogStore = defineStore('products', {
