@@ -74,7 +74,7 @@ const productList = computed(() => {
   if (indexOfMaterial.value === 0 && indexOfCost.value === 0) return products.value
 
   if (indexOfMaterial.value) {
-    sortedProducts.value = products.value.filter((product):any => product.material === indexOfMaterial.value)
+    sortedProducts.value = products.value.filter((product) => product.material === indexOfMaterial.value)
     if (indexOfCost.value === 1) {
     sortedProducts.value = sortedProducts.value.sort((a: any, b:any) => a.price.current_price - b.price.current_price)
 
