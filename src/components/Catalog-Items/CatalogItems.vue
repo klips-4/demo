@@ -40,8 +40,19 @@ import {defineProps, ref} from "vue";
 
 interface Props {
   product: {
-    type: object
-  }
+    type: object,
+    code: string
+    price: {
+      type: object
+      old_price: number
+      current_price: number
+    },
+    image: {
+      type: object
+      url: string
+    },
+    name: string
+  },
 }
 
 const {product} = defineProps<Props>()

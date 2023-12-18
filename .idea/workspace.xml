@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e144a22e-2b32-42cb-b57e-fc3fb9f5472e" name="Changes" comment="initial" />
+    <list default="true" id="e144a22e-2b32-42cb-b57e-fc3fb9f5472e" name="Changes" comment="first commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Catalog-Items/CatalogItems.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Catalog-Items/CatalogItems.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Catalog/Catalog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Catalog/Catalog.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/api/httpClient.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/api/httpClient.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/api/rest/catalog.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/api/rest/catalog.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,7 +61,7 @@
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Asus\\WebstormProjects\\demo-project\\node_modules\\typescript\\lib&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Asus\\WebstormProjects\\demo\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -68,7 +74,17 @@
       <recent name="C:\Users\Asus\WebstormProjects\demo-project\src\components\Catalog" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="npm.build">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -101,6 +117,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.dev" />
         <item itemvalue="npm.deploy" />
         <item itemvalue="npm.predeploy" />
@@ -122,6 +139,9 @@
       <workItem from="1702839995877" duration="98000" />
       <workItem from="1702840100748" duration="744000" />
       <workItem from="1702840873710" duration="34000" />
+      <workItem from="1702841104510" duration="6712000" />
+      <workItem from="1702848703529" duration="261000" />
+      <workItem from="1702868664468" duration="2089000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1702826786900</created>
@@ -186,9 +206,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="first commit" />
     <MESSAGE value="configuration" />
     <MESSAGE value="initial" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial" />
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
 </project>

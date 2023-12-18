@@ -20,8 +20,7 @@
             <span>Материал </span>
             <select v-model="selected" @change="setIndexMaterial">
               <option v-for="material in materials"
-                      :key=index
-                      :value='material.id'
+                      :key=material.id
               > {{ material.name }}
 
               </option>
@@ -42,7 +41,7 @@
 </template>
 
 <script setup lang="ts">
-import {useCatalogStore} from "/src/store/useCatalogStore";
+import {useCatalogStore} from "../../store/useCatalogStore";
 import {storeToRefs} from "pinia"
 import CatalogItems from "../Catalog-Items/CatalogItems.vue";
 import {computed, ref} from "vue";
@@ -56,34 +55,36 @@ const {products, materials} = storeToRefs(catalogStore)
 
 const indexOfMaterial = ref(0)
 const indexOfCost = ref(0)
+const cost = ref('str')
+const selected = ref(0)
 
-const setIndexMaterial = (index) => {
+const setIndexMaterial = (index: any) => {
   indexOfMaterial.value = index.target.selectedIndex + 1
 }
 
-const setIndexCost = (index) => {
+const setIndexCost = (index: any) => {
   indexOfCost.value = index.target.selectedIndex + 1
 }
 
-const sortedProducts = ref({})
+const sortedProducts: any = ref({})
+
 
 const productList = computed(() => {
 
-  if (indexOfMaterial.value === 0 || indexOfCost === 0) return products.value
+  if (indexOfMaterial.value === 0 && indexOfCost.value === 0) return products.value
 
   if (indexOfMaterial.value) {
-    sortedProducts.value = products.value.filter((product) => product.material === indexOfMaterial.value)
+    sortedProducts.value = products.value.filter((product):any => product.material === indexOfMaterial.value)
     if (indexOfCost.value === 1) {
-      sortedProducts.value = sortedProducts.value.sort((a, b) => Number(a.price.current_price) - Number(b.price.current_price))
+    sortedProducts.value = sortedProducts.value.sort((a: any, b:any) => a.price.current_price - b.price.current_price)
+
     }
     if (indexOfCost.value === 2) {
-      sortedProducts.value = sortedProducts.value.sort((a, b) => -Number(a.price.current_price) + Number(b.price.current_price))
+    sortedProducts.value = sortedProducts.value.sort((a: any, b:any) => -a.price.current_price + b.price.current_price)
     }
     return sortedProducts.value
   }
-
 })
-
 
 </script>
 
